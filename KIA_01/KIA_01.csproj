@@ -1,0 +1,1152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{61A713F7-19E4-49C9-A9AF-AA25940AC19C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KIA_01</RootNamespace>
+    <AssemblyName>KIA_01</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\KIAMobility_Project\KIAMobility_Project\bin\Debug\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJSON, Version=0.18.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LitJson.0.18.0\lib\net45\LitJSON.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="NewRelic.Api.Agent, Version=10.0.0.0, Culture=neutral, PublicKeyToken=06552fced0b33d87, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewRelic.Agent.Api.10.20.0\lib\net462\NewRelic.Api.Agent.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="00_Manager\00_ObjSources\Define.cs" />
+    <Compile Include="00_Manager\CConfigMng.cs" />
+    <Compile Include="00_Manager\CDataMng.cs" />
+    <Compile Include="00_Manager\CNetWorkMng.cs" />
+    <Compile Include="00_Manager\CSerialPortMng.cs" />
+    <Compile Include="00_Manager\CSoundMng.cs" />
+    <Compile Include="00_Manager\CTCPHansolSyncMng.cs" />
+    <Compile Include="00_Manager\CTCPMobileMng.cs" />
+    <Compile Include="01_NetWorkSource\CVNetTCPServer.cs" />
+    <Compile Include="01_NetWorkSource\CVNetTCPSocket.cs" />
+    <Compile Include="01_NetWorkSource\CVNetUDPSocket.cs" />
+    <Compile Include="02_FormList\01_LogDrawForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02_FormList\01_LogDrawForm.Designer.cs">
+      <DependentUpon>01_LogDrawForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02_FormList\00_MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02_FormList\00_MainForm.Designer.cs">
+      <DependentUpon>00_MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02_FormList\02_SettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02_FormList\02_SettingForm.Designer.cs">
+      <DependentUpon>02_SettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02_FormList\ColorPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02_FormList\ColorPicker.Designer.cs">
+      <DependentUpon>ColorPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03_SerialPort\RS232Connection.cs" />
+    <Compile Include="03_SerialPort\RS232_CCNET.cs" />
+    <Compile Include="03_SerialPort\RS232_ID003.cs" />
+    <Compile Include="03_SerialPort\RS232_SSP.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="02_FormList\00_MainForm.resx">
+      <DependentUpon>00_MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02_FormList\01_LogDrawForm.resx">
+      <DependentUpon>01_LogDrawForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02_FormList\02_SettingForm.resx">
+      <DependentUpon>02_SettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02_FormList\ColorPicker.resx">
+      <DependentUpon>ColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\Kia-Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\3dcube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\1026.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\2292038.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\4916925.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\activity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\add-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\additem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\add-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\airpod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\archive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\archive-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\archive-minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\archive-slash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\archive-tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-circle-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-circle-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-circle-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-down-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-down-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-left-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-left-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-left-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-right-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-right-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-right-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-square-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-square-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-square-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-square-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-swap-horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-up-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-up-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\arrow-up-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\autobrightness.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\bag-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\bag-cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\bag-cross-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\bag-happy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\bag-tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\bag-tick-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\bag-timer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\battery-charging.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\battery-disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\battery-empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\battery-empty-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\battery-full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\blend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\brand-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\brush.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\brush-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\brush-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\brush-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\cake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\call-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\call-calling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\call-incoming.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\call-minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\call-outgoing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\call-received.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\call-remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\call-slash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\card-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\card-edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\card-pos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\card-receive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\card-remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\card-send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\card-slash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\card-tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\category.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\category-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\chart-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\chart-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\chart-21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\chart-success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\chrome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\clock-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\close-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\close-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\cloud-cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\cloud-drizzle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\cloud-lightning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\cloud-minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\cloud-notif.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\cloud-plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\cloud-snow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\cloud-sunny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\coffee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\coin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\colorfilter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\computing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\convert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\copy-success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\cpu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\cpu-charge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\cpu-setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\crown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\crown-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\cup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\danger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\designtools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\direct.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\directbox-default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\directbox-notif.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\directbox-receive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\directbox-send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\direct-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\direct-inbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\direct-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\direct-normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\direct-notification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\direct-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\direct-send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\direct-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\discover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\discover-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\dollar-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\dollar-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\emoji-happy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\emoji-normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\emoji-sad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\export-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\export-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\export-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\filter-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\firstline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\flag-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\flash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\flash-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\flash-slash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\frame-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\frame-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\frame-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\frame-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\game.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\glass-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\global.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\global-refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\gps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\gps-slash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\graph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\happyemoji.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\hashtag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\headphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\health.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\home-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\home-hashtag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\home-trend-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\home-trend-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\import-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\import-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\info-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\instagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\keyboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\lamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\layer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\lifebuoy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\like.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\link-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\link-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\location-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\location-cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\location-minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\location-slash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\location-tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\login-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\logout-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\magicpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\mask.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\message-favorite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\message-notif.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\message-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\minus-cirlce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\minus-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\monitor-mobbile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\monitor-recorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\moon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\more.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\more-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\more-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\more-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\mouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\paintbucket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\paperclip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\paperclip-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\path.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\path-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\path-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\personalcard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\pet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\pharagraphspacing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\printer-slash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\profile-2user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\profile-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\profile-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\profile-delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\profile-remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\profile-tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\ram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\ram-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\receipt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\receipt-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\receipt-disscount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\refresh-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\reserve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\rotate-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\rotate-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\routing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\routing-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\ruler&amp;pen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\ruler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\search-favorite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\search-favorite-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\search-normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\search-normal-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\search-status.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\search-status-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\search-zoom-in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\search-zoom-in-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\search-zoom-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\search-zoom-out-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\send-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\setting-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\setting-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\setting-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\setting-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\shapes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\shop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\simcard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\simcard-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\size.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\slash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\smallcaps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\sort.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\sound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\star-slash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\status-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\sticker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\sun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\tag-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\tag-cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\textalign-center.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\textalign-justifycenter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\textalign-justifyleft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\textalign-justifyright.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\textalign-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\textalign-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\text-block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\text-bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\text-italic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\text-underline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\tick-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\ticket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\ticket-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\ticket-discount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\ticket-expired.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\ticket-star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\tick-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\timer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\timer-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\timer-pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\timer-start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\toggle-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\toggle-off-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\toggle-on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\toggle-on-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\trend-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\trend-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\triangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\Vector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\Vector-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\Vector-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\Vector-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\Vector-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\Vector-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\Vector-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\Vector-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\verify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\wallet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\wallet-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\wallet-minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\weight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\weight-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\chart_icon_142668.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\Color_circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\ColorPickerData.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="99_Resources\ColorData.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

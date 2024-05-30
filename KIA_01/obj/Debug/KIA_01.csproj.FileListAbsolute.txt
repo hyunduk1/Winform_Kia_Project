@@ -1,0 +1,122 @@
+D:\00_SoftWare\00_KIA_CES_2024\KIA_01\KIA_01\bin\Debug\KIA_01.exe.config
+D:\00_SoftWare\00_KIA_CES_2024\KIA_01\KIA_01\bin\Debug\KIA_01.exe
+D:\00_SoftWare\00_KIA_CES_2024\KIA_01\KIA_01\bin\Debug\KIA_01.pdb
+D:\00_SoftWare\00_KIA_CES_2024\KIA_01\KIA_01\bin\Debug\Guna.UI2.dll
+D:\00_SoftWare\00_KIA_CES_2024\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.AssemblyReference.cache
+D:\00_SoftWare\00_KIA_CES_2024\KIA_01\KIA_01\obj\Debug\KIA_01.Properties.Resources.resources
+D:\00_SoftWare\00_KIA_CES_2024\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.GenerateResource.cache
+D:\00_SoftWare\00_KIA_CES_2024\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.CoreCompileInputs.cache
+D:\00_SoftWare\00_KIA_CES_2024\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.CopyComplete
+D:\00_SoftWare\00_KIA_CES_2024\KIA_01\KIA_01\obj\Debug\KIA_01.exe
+D:\00_SoftWare\00_KIA_CES_2024\KIA_01\KIA_01\obj\Debug\KIA_01.pdb
+D:\00_SoftWare\00_KIA_CES_2024\KIA_01\KIA_01\obj\Debug\KIA_01.MainForm.resources
+D:\00_SoftWare\00_KIA_CES_2024\KIA_01\KIA_01\obj\Debug\KIA_01._02_FormList._01_LogDrawForm.resources
+D:\00_SoftWare\00_KIA_CES_2024\KIA_01\KIA_01\obj\Debug\KIA_01._02_FormList._02_SettingForm.resources
+D:\00_SoftWare\00_KIA_CES_2024\KIA_01\KIA_01\bin\Debug\LitJSON.dll
+D:\00_SoftWare\00_KIA_CES_2024\KIA_01\KIA_01\bin\Debug\NewRelic.Api.Agent.dll
+D:\00_SoftWare\00_KIA_CES_2024\KIA_01\KIA_01\bin\Debug\Newtonsoft.Json.dll
+D:\00_SoftWare\00_KIA_CES_2024\KIA_01\KIA_01\bin\Debug\Newtonsoft.Json.xml
+D:\00_SoftWare\KIA_01\KIA_01\bin\Debug\KIA_01.exe.config
+D:\00_SoftWare\KIA_01\KIA_01\bin\Debug\KIA_01.exe
+D:\00_SoftWare\KIA_01\KIA_01\bin\Debug\KIA_01.pdb
+D:\00_SoftWare\KIA_01\KIA_01\bin\Debug\LitJSON.dll
+D:\00_SoftWare\KIA_01\KIA_01\bin\Debug\NewRelic.Api.Agent.dll
+D:\00_SoftWare\KIA_01\KIA_01\bin\Debug\Newtonsoft.Json.dll
+D:\00_SoftWare\KIA_01\KIA_01\bin\Debug\Newtonsoft.Json.xml
+D:\00_SoftWare\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.AssemblyReference.cache
+D:\00_SoftWare\KIA_01\KIA_01\obj\Debug\KIA_01.MainForm.resources
+D:\00_SoftWare\KIA_01\KIA_01\obj\Debug\KIA_01._02_FormList._01_LogDrawForm.resources
+D:\00_SoftWare\KIA_01\KIA_01\obj\Debug\KIA_01._02_FormList._02_SettingForm.resources
+D:\00_SoftWare\KIA_01\KIA_01\obj\Debug\KIA_01.Properties.Resources.resources
+D:\00_SoftWare\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.GenerateResource.cache
+D:\00_SoftWare\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.CoreCompileInputs.cache
+D:\00_SoftWare\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.CopyComplete
+D:\00_SoftWare\KIA_01\KIA_01\obj\Debug\KIA_01.exe
+D:\00_SoftWare\KIA_01\KIA_01\obj\Debug\KIA_01.pdb
+C:\hyun-duku\KIA_01\KIA_01\bin\Debug\KIA_01.exe.config
+C:\hyun-duku\KIA_01\KIA_01\bin\Debug\KIA_01.exe
+C:\hyun-duku\KIA_01\KIA_01\bin\Debug\KIA_01.pdb
+C:\hyun-duku\KIA_01\KIA_01\bin\Debug\LitJSON.dll
+C:\hyun-duku\KIA_01\KIA_01\bin\Debug\NewRelic.Api.Agent.dll
+C:\hyun-duku\KIA_01\KIA_01\bin\Debug\Newtonsoft.Json.dll
+C:\hyun-duku\KIA_01\KIA_01\bin\Debug\Newtonsoft.Json.xml
+C:\hyun-duku\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.AssemblyReference.cache
+C:\hyun-duku\KIA_01\KIA_01\obj\Debug\KIA_01.MainForm.resources
+C:\hyun-duku\KIA_01\KIA_01\obj\Debug\KIA_01._02_FormList._01_LogDrawForm.resources
+C:\hyun-duku\KIA_01\KIA_01\obj\Debug\KIA_01._02_FormList._02_SettingForm.resources
+C:\hyun-duku\KIA_01\KIA_01\obj\Debug\KIA_01.Properties.Resources.resources
+C:\hyun-duku\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.GenerateResource.cache
+C:\hyun-duku\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.CoreCompileInputs.cache
+C:\hyun-duku\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.CopyComplete
+C:\hyun-duku\KIA_01\KIA_01\obj\Debug\KIA_01.exe
+C:\hyun-duku\KIA_01\KIA_01\obj\Debug\KIA_01.pdb
+C:\Users\user\Desktop\KIA_01\KIA_01\bin\Debug\KIA_01.exe.config
+C:\Users\user\Desktop\KIA_01\KIA_01\bin\Debug\KIA_01.exe
+C:\Users\user\Desktop\KIA_01\KIA_01\bin\Debug\KIA_01.pdb
+C:\Users\user\Desktop\KIA_01\KIA_01\bin\Debug\LitJSON.dll
+C:\Users\user\Desktop\KIA_01\KIA_01\bin\Debug\NewRelic.Api.Agent.dll
+C:\Users\user\Desktop\KIA_01\KIA_01\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Desktop\KIA_01\KIA_01\bin\Debug\Newtonsoft.Json.xml
+C:\Users\user\Desktop\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\KIA_01\KIA_01\obj\Debug\KIA_01.MainForm.resources
+C:\Users\user\Desktop\KIA_01\KIA_01\obj\Debug\KIA_01._02_FormList._01_LogDrawForm.resources
+C:\Users\user\Desktop\KIA_01\KIA_01\obj\Debug\KIA_01._02_FormList._02_SettingForm.resources
+C:\Users\user\Desktop\KIA_01\KIA_01\obj\Debug\KIA_01.Properties.Resources.resources
+C:\Users\user\Desktop\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.GenerateResource.cache
+C:\Users\user\Desktop\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.CopyComplete
+C:\Users\user\Desktop\KIA_01\KIA_01\obj\Debug\KIA_01.exe
+C:\Users\user\Desktop\KIA_01\KIA_01\obj\Debug\KIA_01.pdb
+C:\Users\whdms\OneDrive\바탕 화면\HighLoof_End\KIA_01\KIA_01\bin\Debug\KIA_01.exe.config
+C:\Users\whdms\OneDrive\바탕 화면\HighLoof_End\KIA_01\KIA_01\bin\Debug\KIA_01.exe
+C:\Users\whdms\OneDrive\바탕 화면\HighLoof_End\KIA_01\KIA_01\bin\Debug\KIA_01.pdb
+C:\Users\whdms\OneDrive\바탕 화면\HighLoof_End\KIA_01\KIA_01\bin\Debug\LitJSON.dll
+C:\Users\whdms\OneDrive\바탕 화면\HighLoof_End\KIA_01\KIA_01\bin\Debug\NewRelic.Api.Agent.dll
+C:\Users\whdms\OneDrive\바탕 화면\HighLoof_End\KIA_01\KIA_01\bin\Debug\Newtonsoft.Json.dll
+C:\Users\whdms\OneDrive\바탕 화면\HighLoof_End\KIA_01\KIA_01\bin\Debug\Newtonsoft.Json.xml
+C:\Users\whdms\OneDrive\바탕 화면\HighLoof_End\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.AssemblyReference.cache
+C:\Users\whdms\OneDrive\바탕 화면\HighLoof_End\KIA_01\KIA_01\obj\Debug\KIA_01.MainForm.resources
+C:\Users\whdms\OneDrive\바탕 화면\HighLoof_End\KIA_01\KIA_01\obj\Debug\KIA_01._02_FormList._01_LogDrawForm.resources
+C:\Users\whdms\OneDrive\바탕 화면\HighLoof_End\KIA_01\KIA_01\obj\Debug\KIA_01._02_FormList._02_SettingForm.resources
+C:\Users\whdms\OneDrive\바탕 화면\HighLoof_End\KIA_01\KIA_01\obj\Debug\KIA_01.Properties.Resources.resources
+C:\Users\whdms\OneDrive\바탕 화면\HighLoof_End\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.GenerateResource.cache
+C:\Users\whdms\OneDrive\바탕 화면\HighLoof_End\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.CoreCompileInputs.cache
+C:\Users\whdms\OneDrive\바탕 화면\HighLoof_End\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.CopyComplete
+C:\Users\whdms\OneDrive\바탕 화면\HighLoof_End\KIA_01\KIA_01\obj\Debug\KIA_01.exe
+C:\Users\whdms\OneDrive\바탕 화면\HighLoof_End\KIA_01\KIA_01\obj\Debug\KIA_01.pdb
+C:\hyun-duku\HighLoof_End\KIA_01\KIA_01\bin\Debug\KIA_01.exe.config
+C:\hyun-duku\HighLoof_End\KIA_01\KIA_01\bin\Debug\KIA_01.exe
+C:\hyun-duku\HighLoof_End\KIA_01\KIA_01\bin\Debug\KIA_01.pdb
+C:\hyun-duku\HighLoof_End\KIA_01\KIA_01\bin\Debug\LitJSON.dll
+C:\hyun-duku\HighLoof_End\KIA_01\KIA_01\bin\Debug\NewRelic.Api.Agent.dll
+C:\hyun-duku\HighLoof_End\KIA_01\KIA_01\bin\Debug\Newtonsoft.Json.dll
+C:\hyun-duku\HighLoof_End\KIA_01\KIA_01\bin\Debug\Newtonsoft.Json.xml
+C:\hyun-duku\HighLoof_End\KIA_01\KIA_01\obj\Debug\KIA_01.MainForm.resources
+C:\hyun-duku\HighLoof_End\KIA_01\KIA_01\obj\Debug\KIA_01._02_FormList._01_LogDrawForm.resources
+C:\hyun-duku\HighLoof_End\KIA_01\KIA_01\obj\Debug\KIA_01._02_FormList._02_SettingForm.resources
+C:\hyun-duku\HighLoof_End\KIA_01\KIA_01\obj\Debug\KIA_01._02_FormList.ColorPicker.resources
+C:\hyun-duku\HighLoof_End\KIA_01\KIA_01\obj\Debug\KIA_01.Properties.Resources.resources
+C:\hyun-duku\HighLoof_End\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.GenerateResource.cache
+C:\hyun-duku\HighLoof_End\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.CoreCompileInputs.cache
+C:\hyun-duku\HighLoof_End\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.CopyComplete
+C:\hyun-duku\HighLoof_End\KIA_01\KIA_01\obj\Debug\KIA_01.exe
+C:\hyun-duku\HighLoof_End\KIA_01\KIA_01\obj\Debug\KIA_01.pdb
+C:\hyun-duku\HighLoof_End\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.AssemblyReference.cache
+E:\HyunDuk\Duku_Project\kia\KIA_01\KIA_01\bin\Debug\KIA_01.exe.config
+E:\HyunDuk\Duku_Project\kia\KIA_01\KIA_01\bin\Debug\KIA_01.exe
+E:\HyunDuk\Duku_Project\kia\KIA_01\KIA_01\bin\Debug\KIA_01.pdb
+E:\HyunDuk\Duku_Project\kia\KIA_01\KIA_01\bin\Debug\LitJSON.dll
+E:\HyunDuk\Duku_Project\kia\KIA_01\KIA_01\bin\Debug\NewRelic.Api.Agent.dll
+E:\HyunDuk\Duku_Project\kia\KIA_01\KIA_01\bin\Debug\Newtonsoft.Json.dll
+E:\HyunDuk\Duku_Project\kia\KIA_01\KIA_01\bin\Debug\Newtonsoft.Json.xml
+E:\HyunDuk\Duku_Project\kia\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.AssemblyReference.cache
+E:\HyunDuk\Duku_Project\kia\KIA_01\KIA_01\obj\Debug\KIA_01.MainForm.resources
+E:\HyunDuk\Duku_Project\kia\KIA_01\KIA_01\obj\Debug\KIA_01._02_FormList._01_LogDrawForm.resources
+E:\HyunDuk\Duku_Project\kia\KIA_01\KIA_01\obj\Debug\KIA_01._02_FormList._02_SettingForm.resources
+E:\HyunDuk\Duku_Project\kia\KIA_01\KIA_01\obj\Debug\KIA_01._02_FormList.ColorPicker.resources
+E:\HyunDuk\Duku_Project\kia\KIA_01\KIA_01\obj\Debug\KIA_01.Properties.Resources.resources
+E:\HyunDuk\Duku_Project\kia\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.GenerateResource.cache
+E:\HyunDuk\Duku_Project\kia\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.CoreCompileInputs.cache
+E:\HyunDuk\Duku_Project\kia\KIA_01\KIA_01\obj\Debug\KIA_01.csproj.CopyComplete
+E:\HyunDuk\Duku_Project\kia\KIA_01\KIA_01\obj\Debug\KIA_01.exe
+E:\HyunDuk\Duku_Project\kia\KIA_01\KIA_01\obj\Debug\KIA_01.pdb
